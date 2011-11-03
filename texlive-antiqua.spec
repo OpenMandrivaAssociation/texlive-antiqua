@@ -1,3 +1,9 @@
+# revision 24266
+# category Package
+# catalog-ctan /fonts/urw/antiqua
+# catalog-date 2011-10-11 17:17:32 +0200
+# catalog-license gpl
+# catalog-version 001.003
 Name:		texlive-antiqua
 Version:	001.003
 Release:	1
@@ -65,6 +71,7 @@ supporting files for use with (La)TeX.
 %{_texmfdistdir}/tex/latex/antiqua/ts1uaq.fd
 %doc %{_texmfdistdir}/doc/fonts/antiqua/antiqua.txt
 %doc %{_texmfdistdir}/doc/fonts/antiqua/uaqr8ac.afm.org
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -75,3 +82,5 @@ supporting files for use with (La)TeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
