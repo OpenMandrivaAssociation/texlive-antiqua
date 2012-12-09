@@ -72,3 +72,18 @@ supporting files for use with (La)TeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 001.003-2
++ Revision: 749252
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 001.003-1
++ Revision: 717833
+- texlive-antiqua
+- texlive-antiqua
+- texlive-antiqua
+- texlive-antiqua
+- texlive-antiqua
+
