@@ -6,7 +6,7 @@
 # catalog-version 001.003
 Name:		texlive-antiqua
 Version:	001.003
-Release:	9
+Release:	10
 Summary:	URW Antiqua condensed font, for use with TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/urw/antiqua
