@@ -5,8 +5,8 @@ Summary:	URW Antiqua condensed font, for use with TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/urw/antiqua
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/antiqua.r24266.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/antiqua.doc.r24266.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/antiqua.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/antiqua.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
