@@ -1,18 +1,12 @@
-# revision 24266
-# category Package
-# catalog-ctan /fonts/urw/antiqua
-# catalog-date 2011-10-11 17:17:32 +0200
-# catalog-license gpl
-# catalog-version 001.003
 Name:		texlive-antiqua
-Version:	001.003
-Release:	11
+Version:	24266
+Release:	1
 Summary:	URW Antiqua condensed font, for use with TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/urw/antiqua
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/antiqua.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/antiqua.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/antiqua.r24266.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/antiqua.doc.r24266.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ The directory contains a copy of the Type 1 font "URW Antiqua
 supporting files for use with (La)TeX.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -65,25 +59,10 @@ supporting files for use with (La)TeX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 001.003-2
-+ Revision: 749252
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 001.003-1
-+ Revision: 717833
-- texlive-antiqua
-- texlive-antiqua
-- texlive-antiqua
-- texlive-antiqua
-- texlive-antiqua
-
