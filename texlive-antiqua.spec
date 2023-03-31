@@ -1,6 +1,6 @@
 Name:		texlive-antiqua
 Version:	24266
-Release:	1
+Release:	2
 Summary:	URW Antiqua condensed font, for use with TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/urw/antiqua
