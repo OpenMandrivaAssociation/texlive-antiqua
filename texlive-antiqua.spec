@@ -3,7 +3,7 @@ Version:	24266
 Release:	2
 Summary:	URW Antiqua condensed font, for use with TeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/urw/antiqua
+URL:		https://www.ctan.org/tex-archive/fonts/urw/antiqua
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/antiqua.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/antiqua.doc.r%{version}.tar.xz
